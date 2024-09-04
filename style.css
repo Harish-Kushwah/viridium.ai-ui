@@ -1,5 +1,7 @@
+
 *{
     margin: 0px;
+    
 }
 .header-viridium {
     position: fixed;
@@ -428,7 +430,8 @@
 /* My CSS */
 .container{
     border: 1px solid #1c59ff ;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
 }
 .top-container{
     height: 300px;
@@ -445,9 +448,17 @@
    
 }
 .left-container{
-    width: 25%;
+    width: 25%;    
+    border: 0px;
+}
+.filter-container{
+    /* width: 25%; */
     margin-left: 10px;
-    margin-top: 45px;
+    margin-top: 5px;
+    border: 1px solid #1dc275 ;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+
    
 }
 .right-container{
@@ -473,13 +484,22 @@
 }
 .filter-field label{
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 14px;
 
 }
 select,input{
     width: 90%;
     height: 30px;
     border-radius: 3px;
+    border: 1px solid #505050;
+}
+input:focus{
+    border: 1px solid #1dc275;
+
+}
+select:focus{
+    border: 1px solid #1dc275;;
+
 }
 
 .apply-btn{
@@ -499,6 +519,8 @@ select,input{
     font-family: "Montserrat", sans-serif;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+
   }
 
 .apply-btn:hover {
@@ -514,6 +536,16 @@ select,input{
     margin: 5px;
     padding: 5px;
     border-right:5px solid #1dc275 ;
+    box-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+
+}
+.card:hover{
+    box-shadow: 1px 1px 5px grey;
+    transition: 0.2s ease-in-out;
+    transition-duration: 2s;
+
+
 }
 .card-header{
     /* background-color: #1c59ff; */
@@ -523,7 +555,7 @@ select,input{
 
 }
 .card-header p{
-    font-size: 30px;
+    font-size: 28px;
     /* color: #e8eeff; */
 }
 .card-body{
@@ -540,7 +572,8 @@ select,input{
 .card-des{
     padding: 5px;
     padding-top:5px;
-    font-size: 18px;
+    padding-right: 4px;
+    font-size: 17px;
     max-width: 800px;
     margin-left: 10px;
 
@@ -621,7 +654,13 @@ select,input{
     height: 30px;
     margin-right: 3px;
 }
+.filter-title{
+    text-align: left;
+    margin-top: 18px;
+    margin-left: 10px;
+
+}
 .filter-title p{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
