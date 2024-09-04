@@ -671,7 +671,7 @@ select:focus{
       justify-content: center;
     }
     .container{
-        width: 90%;
+        width: 100%;
     }
     .search{
         justify-content: flex-start;
